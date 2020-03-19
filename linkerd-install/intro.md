@@ -1,6 +1,6 @@
 In this introductory level track, you'll learn how to install [Linkerd](https://linkerd.io) to a test cluster that has been provisioned for you.
 
-The first step introduces the environment, including the kubernetes cluster. You will install the Linkerd CLI to prepare for the next challenge.
+The first step introduces the environment, including the kubernetes cluster. 
 
 In the second step, you will:
 - Learn how to check that you can install Linkerd to your cluster

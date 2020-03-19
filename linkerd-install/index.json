@@ -27,7 +27,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "install-kubectl.sh"
     },
     "finish": {
       "text": "finish.md"

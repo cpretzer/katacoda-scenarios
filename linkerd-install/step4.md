@@ -8,9 +8,11 @@ started:
 
 `kubectl get po -n emojivoto -w`
 
-Next, let's take a look at the *web* service:
+Next, let's take a look at the *web* service to see the application UI. We have to change the service type of the `web-svc` service to LoadBalancer to get an external IP address.
 
-`kubectl -n emojivoto port-forward svc/web-svc 8080:80`
+- Click the `+` button to the right of the `Terminal` tab
+- Click `View http port 80 on Host 1`
+- A new tab will open with the emojivoto UI
 
 ## Manual injection
 
@@ -39,7 +41,7 @@ Let's look at the pods in the emojivoto namespace to make sure that the emoji de
 
 `kubectl wait po -n emojivoto --all --for=condition=Ready`
 
-When the command is complete, we can see all the pods running with the proxy injected:
+When the command is complete, we can see all the emoji pod running with the proxy injected:
 
 `kubectl get po -n emojivoto`
 
@@ -53,7 +55,7 @@ namespace:
 
 Then make sure that the annotation was applied to the namespace:
 
-`kubectl get ns emojivoto -oyaml | grep \"linkerd.io/inject\"`
+`kubectl get ns emojivoto -oyaml | grep linkerd.io/inject`
 
 Now let's restart all the deployments in the *emojivoto* namespace:
 

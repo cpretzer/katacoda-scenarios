@@ -36,7 +36,11 @@ When the editor successfully exits, Kubernetes will detect the change and re-sch
 
 ## View the Linkerd Dashboard
 
-Check the browser tab to make sure that the dashboard displays
+- Click the `+` button to the right of the `Terminal` tab
+- Click `Select Port to View on Host 1`
+- In the new tab enter `8084` for the port
+
+The browser will load with the Linkerd dashboard. 
 
 ## Using the Linkerd CLI to view metrics
 
